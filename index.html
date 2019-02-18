@@ -1,0 +1,170 @@
+<DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3 Page Template</title>
+		<script type="text/javascript" src="../d3.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<h1>President Trump's Schedule</h1>
+		</header>
+		
+		<div class="visualization">
+		<div id="tooltip" class="hidden">
+			<p><span id="value">test</span></p>
+		</div>
+
+		<script type="text/javascript">
+			var Vis = {};
+			// Set constants
+			Vis.padding = 50;
+			Vis.height = 2000;
+			Vis.width = 1200;
+
+			// Time format
+			var parseTime = d3.timeParse("%A, %B %e, %Y %I:%M %p");
+
+			// Use the time format to parse time values
+			var rowConverter = function(d)
+			{
+				var currentTime = parseTime(d.time);
+				if (!currentTime) {
+					return 
+					{
+						Time: 0
+					};
+				}
+
+				return {
+					Time: new Date(1900, 0, 1, currentTime.getHours(), currentTime.getMinutes()),
+					Date: new Date(currentTime.getYear()+ 1900, currentTime.getMonth(), currentTime.getDate()),
+					Duration: d.duration,
+					Event: d.event
+				};
+			};
+
+			var getTimeScale = function(d){
+				return d3.scaleTime()
+				.domain([
+					d3.min(d, x => x.Date),
+					d3.max(d, x => x.Date)
+					])
+					.range([Vis.padding, Vis.height - Vis.padding]);}
+			
+			Vis.midnight = new Date(1900, 0, 1, 0, 0);
+			// Vis.xScale = d3.scaleTime()
+			// 	.domain([Vis.midnight, d3.timeDay.offset(Vis.midnight,1)])
+			//	.range([Vis.padding, Vis.width - Vis.padding]);
+
+			Vis.makeGraphic = function(d){
+				Vis.svg = d3.select("body").select(".visualization")
+				.append("svg")
+				.attr("id","svg")
+				.attr("width", Vis.width)
+				.attr("height",Vis.height);
+
+				Vis.xAxis = d3.axisTop().
+					scale(Vis.xScale);
+
+				Vis.yAxis = d3.axisLeft()
+				.scale(Vis.yScale)
+				.tickFormat(d3.timeFormat("%B %d, %Y"));
+
+				Vis.rectangles = Vis.svg.selectAll("rect")
+				.data(Vis.dataset)
+				.enter()
+				.append("rect")
+				.classed("event-block",true)
+				.on("mouseover", function(d)
+					{
+						var xPosition = parseFloat(d3.select(this).attr("x")) + document.getElementById('svg').getBoundingClientRect().left + document.body.scrollLeft;
+						var yPosition = parseFloat(d3.select(this).attr("y")) + document.getElementById('svg').getBoundingClientRect().top + document.body.scrollTop;
+
+						d3.select("#tooltip")
+						.style("left", xPosition)
+						.style("top", yPosition - 35)
+						.select("#value")
+						.text(d.Event);
+
+						d3.select("#tooltip").classed("hidden", false);
+					})
+				.on("mouseout", function(d)
+					{
+						d3.select("#tooltip").classed("hidden", true);
+					});
+
+				Vis.rectangles
+				.attr("x", function(d)
+					{
+						return Vis.xScale(d.Time);
+					})
+				.attr("y", function(d, i)
+					{
+						return Vis.yScale(d.Date);
+					})
+				.attr("height", 20)
+				.attr("width", function(d)
+					{
+						return Vis.xScale(d3.timeMinute.offset(d.Time, d.Duration)) - Vis.xScale(d.Time);
+					})
+				.attr("fill", function(d,i)
+					{
+						return Vis.colorScale(d.Event);
+					})
+				.attr("event", d => d.Event)
+				.attr("date", d => d.Date);
+
+				Vis.svg.append("g")
+				.attr("transform", "translate(0,20)")
+				.call(Vis.xAxis);
+
+				Vis.svg.append("g")
+				.attr("transform", "translate(120,0)")
+				.call(Vis.yAxis);
+				
+			}
+
+			// Load the dataset
+			d3.json("./data/trump_schedule.json").then(function(data)
+				{
+
+					Vis.dataset = data.map(rowConverter).filter(d => d);
+					Vis.dataset.sort((a,b) => a.Date - b.Date);
+					// Vis.yScale = getTimeScale(Vis.dataset);
+
+					Vis.xScale = d3.scaleTime()
+					.domain([
+						d3.min(Vis.dataset, x => x.Time),
+						d3.max(Vis.dataset, x => x.Time)])
+					.range([Vis.padding + 80, Vis.width - Vis.padding]);
+
+					Vis.barHeight = 30;
+					Vis.dates = [];
+					for (i = 0; i<50; i++)
+					{
+						Vis.dates.push(i*Vis.barHeight);
+					}
+					Vis.yScale = d3.scalePoint()
+						.domain(Vis.dataset.map(x => x.Date))
+						.range([Vis.padding, Vis.height - Vis.padding]);;
+
+					Vis.wScale = d3.scaleLinear()
+					.domain([
+						d3.min(Vis.dataset, x => x.Duration),
+						d3.max(Vis.dataset, x => x.Duration)
+						])
+					.range([0,500]);
+					
+					Vis.colorScale = d3.scaleOrdinal()
+					.range(d3.schemeSet3);
+
+					Vis.makeGraphic(Vis.dataset);
+
+				});
+		</script>
+		</div>
+	</body>
+</html>
+

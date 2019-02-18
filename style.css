@@ -1,0 +1,42 @@
+#tooltip {
+	position: absolute;
+height: auto;
+width: auto;
+padding: 10px;
+background-color: white;
+-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+pointer-events: none;
+transition 0.3s;
+}
+
+#tooltip.hidden {
+opacity: 0;
+transition: 0.3s;
+}
+
+#tooltip p {
+margin: 0;
+font-family: sans-serif;
+font-size: 8px;
+}
+
+header {
+font-family: sans-serif;
+max-width: 650px;
+margin: 40px auto;
+}
+
+header h1 {
+	line-height: 1.2;
+	text-align: center;
+}
+
+.event-block {
+	transition: 0.3s;
+}
+
+.event-block:hover {
+	opacity: 0.7;
+}
