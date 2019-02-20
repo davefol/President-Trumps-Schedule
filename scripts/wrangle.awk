@@ -16,7 +16,7 @@ BEGIN {
 	duration = $0
 }
 
-/^[A-Z ,:0-9’]+$/{
+/^[A-Z ,:0-9’—.]+$/{
 	event = $0
-	if (event != "SCHEDULE OF THE PRESIDENT" && event != "TBD" && event != "RON:" && event !~ /^([0-9]{1,2}:[0-9]{1,2} (AM|PM))$/ ) print date, time, duration, event
+	if (event != "SCHEDULE OF THE PRESIDENT" && event != "TBD" && event != "RON:" && event !~ /^([0-9]{1,2}:[0-9]{1,2} (AM|PM))$/ && event !~ /^([0-9]{1,2}:[0-9]{1,2} (AM|PM)) (EST|CST)$/ ) print date, time, duration, event
 }

@@ -732,17 +732,17 @@ Depart The White House en route Joint Base Andrews
 
 Arrive Joint Base Andrews
 
-2:55 PM EST
+2:55 PM ​EST
 (2 hr, 10 min)
 
 Depart Washington, DC en route Tupelo, MS
 Note: Air Force One is a C-32
 
-4:05 PM CST
+4:05 PM ​CST
 
 Arrive Tupelo Regional Airport
 
-4:15 PM CST
+4:15 PM ​CST
 (5:15 PM EST)
 (1 hr)
 
@@ -753,7 +753,7 @@ Bill Stepien
 Press:
 Open
 
-5:20 PM CST
+5:20 PM ​CST
 (6:20 PM EST)
 (5 min)
 
@@ -767,7 +767,7 @@ Closed
 Location:
 Tupelo, MS
 
-5:25 PM CST
+5:25 PM ​CST
 (6:25 PM EST)
 (5 min)
 
@@ -789,7 +789,7 @@ Depart Tupelo, MS en route Gulfport, MS
 
 Arrive Gulfport – Biloxi International Airport
 
-6:50 PM CST
+6:50 PM ​CST
 (7:50 PM EST)
 (30 min)
 
@@ -812,7 +812,7 @@ Depart Gulfport, MS en route Biloxi, MS
 
 Arrive Mississippi Coast Coliseum
 
-7:45 PM CST
+7:45 PM ​CST
 (8:50 PM EST)
 (5 min)
 
@@ -824,7 +824,7 @@ Closed
 Location:
 Biloxi, MS
 
-7:50 PM CST
+7:50 PM ​CST
 (8:50 PM EST)
 (5 min)
 
@@ -837,7 +837,7 @@ Closed
 Location:
 Biloxi, MS
 
-8:00 PM CST
+8:00 PM ​CST
 (9:00 PM EST)
 (1 hr)
 
@@ -859,12 +859,12 @@ Depart Biloxi, MS en route Gulfport, MS
 
 Arrive Gulfport – Biloxi International Airport
 
-9:30 PM CST
+9:30 PM ​CST
 (2 hr, 10 min)
 
 Depart Gulfport, MS en route to Washington, DC
 
-12:40 AM EST
+12:40 AM E​ST
 
 Arrive Joint Base Andrews
 
@@ -1205,12 +1205,12 @@ The First Lady will travel.
 
 Arrive Joint Base Andrews
 
-10:20 AM EST
+10:20 AM ​EST​
 (9 hr, 45 min)
 
 Depart Washington, DC en route Buenos Aires, Argentina
 
-10:05 PM Local
+10:05 PM ​Local
 
 Arrive Ministro Pistarini International Airport
 
@@ -1230,8 +1230,8 @@ Buenos Aires, Argentina
 SCHEDULE OF THE PRESIDENT
 Friday, November 30, 2018
 
-6:50 AM Local
-(4:50 AM EST)
+6:50 AM ​Local​
+(​4:50 AM EST​)
 (5 min)
 
 Depart RON Location en route Casa Rosada
@@ -1240,7 +1240,7 @@ Depart RON Location en route Casa Rosada
 
 Arrive Casa Rosada
 
-7:05 AM Local
+7:05 AM ​Local
 (5:05 AM EST)
 (5 min)
 
@@ -1253,7 +1253,7 @@ Press Pool
 Location:
 Buenos Aires, Argentina
 
-7:15 AM Local
+7:15 AM ​Local
 (5:15 AM EST)
 (45 min)
 
@@ -1282,7 +1282,7 @@ EXECUTIVE TIME
 Location:
 Buenos Aires, Argentina
 
-8:25 AM Local
+8:25 AM ​Local
 (6:25 AM EST)
 (30 min)
 
@@ -1291,7 +1291,7 @@ Project Officer:
 Press:
 Location:
 
-9:00 AM Local
+9:00 AM ​Local
 (7:00 AM EST)
 (30 min)
 
@@ -1323,7 +1323,7 @@ Buenos Aires, Argentina
 
 Arrive Centro Costa Salguero
 
-12:05 PM Local
+12:05 PM ​Local
 (10:05 AM EST)
 (20 min)
 
@@ -1335,7 +1335,7 @@ Press Pool
 Location:
 Buenos Aires, Argentina
 
-12:30 PM Local
+12:30 PM ​Local
 (10:30 AM EST)
 (15 min)
 
@@ -1348,7 +1348,7 @@ Press Pool
 Location:
 Buenos Aires, Argentina
 
-12:45 PM Local
+12:45 PM ​Local
 (10:45 AM EST)
 (55 min)
 
@@ -1361,7 +1361,7 @@ Closed
 Location:
 Buenos Aires, Argentina
 
-1:45 PM Local
+1:45 PM ​Local
 (11:45 AM EST)
 (30 min)
 
@@ -1381,7 +1381,7 @@ EXECUTIVE TIME
 Location:
 Buenos Aires, Argentina
 
-2:30 PM Local
+2:30 PM ​Local
 (12:30 PM EST)
 (15 min)
 
@@ -1395,7 +1395,7 @@ Pool at Top
 Location:
 Buenos Aires, Argentina
 
-2:55 PM Local
+2:55 PM ​Local
 (12:30 PM EST)
 (15 min)
 
@@ -1425,7 +1425,7 @@ EXECUTIVE TIME
 Location:
 Buenos Aires, Argentina
 
-4:10 PM Local
+4:10 PM ​Local
 (2:10 PM EST)
 (20 min)
 
@@ -1440,7 +1440,7 @@ Note:
 
 The First Lady will participate.
 
-4:35 PM Local
+4:35 PM ​Local
 (2:35 PM EST)
 (10 min)
 
@@ -1452,7 +1452,7 @@ Closed
 Location:
 Buenos Aires, Argentina
 
-4:50 PM Local
+4:50 PM ​Local
 (2:50 PM EST)
 (10 min)
 
@@ -1481,7 +1481,7 @@ Note: The First Lady will travel.
 
 Arrive Teatro Colon
 
-7:10 PM Local
+7:10 PM ​Local
 (5:10 PM EST)
 (15 min)
 
@@ -1494,7 +1494,7 @@ Location:
 Buenos Aires, Argentina
 Note:
 
-7:30 PM Local
+7:30 PM ​Local
 (5:30 PM EST)
 (30 min)
 
@@ -1511,7 +1511,7 @@ Note:
 
 The First Lady will participate.
 
-8:15 PM Local
+8:15 PM ​Local
 (6:15 PM EST)
 (1 hr, 45 min)
 
@@ -1812,7 +1812,7 @@ RON:
 
 The White House
 
-SCHEDULE OF THE PRESIDENT
+​SCHEDULE OF THE PRESIDENT
 Thursday, December 6, 2018
 
 8:00 AM
@@ -1969,12 +1969,12 @@ Depart The White House en route Joint Base Andrews
 
 Arrive Joint Base Andrews
 
-9:20 AM EST
+9:20 AM ​EST
 (2 hr, 35 min)
 
 Depart Washington, DC en route Kansas City, MO
 
-10:55 AM CST
+10:55 AM ​CST
 
 Arrive Kansas City International Airport
 
@@ -1988,7 +1988,7 @@ Kansas City at Crown Center
 
 Arrive The Westin Kansas City at Crown Center
 
-11:35 AM CST
+11:35 AM ​CST
 (12:35 PM EST)
 (10 min)
 
@@ -2001,7 +2001,7 @@ Open
 Location:
 Kansas City, MO
 
-11:50 AM CST
+11:50 AM ​CST
 (12:50 PM EST)
 (45 min)
 
@@ -2024,12 +2024,12 @@ Kansas City International Airport
 
 Arrive Kansas City International Airport
 
-1:15 PM CST
+1:15 PM ​CST
 (2 hr, 5 min)
 
 Depart Kansas City, MO en route Washington, DC
 
-4:20 PM EST
+4:20 PM ​EST
 
 Arrive Joint Base Andrews
 
@@ -2079,12 +2079,12 @@ The First Lady will travel.
 
 Arrive Joint Base Andrews
 
-9:20 AM EST
+9:20 AM ​EST
 (6 hr, 30 min)
 
 Depart Washington, DC en route Orly, France
 
-9:50 PM Local
+9:50 PM ​Local
 
 Arrive Paris Orly Airport
 
@@ -2426,12 +2426,12 @@ The First Lady will travel.
 
 Arrive Joint Base Andrews
 
-10:20 AM EST
+10:20 AM ​EST​
 (9 hr, 45 min)
 
 Depart Washington, DC en route Buenos Aires, Argentina
 
-10:05 PM Local
+10:05 PM ​Local
 
 Arrive Ministro Pistarini International Airport
 
@@ -3513,7 +3513,7 @@ Oval Office
 
 SIGNING OF H.R. 1918 NICARAGUA HUMAN
 RIGHTS AND ANTICORRUPTION ACT AND
-H.R. 5759 — 21ST CENTURY IDEA
+H.R. 5759 — 21​ST​ CENTURY IDEA
 Project Officer:
 Shahira Knight, Derek Lyons
 Press:
@@ -4109,7 +4109,7 @@ Depart White House en route Joint Base Andrews
 
 Arrive Joint Base Andrews
 
-9:35 AM EST
+9:35 AM ​EST
 (4 hr, 10 min)
 
 Depart Washington, DC en route McAllen, TX
@@ -4117,7 +4117,7 @@ Note:
 
 Air Force One is a C-32
 
-12:45 PM CST
+12:45 PM ​CST
 
 Arrive McAllen International Airport
 
@@ -4131,7 +4131,7 @@ Patrol McAllen Station
 
 Arrive U.S. Border Patrol Station McAllen Station
 
-1:10 PM CST
+1:10 PM ​CST
 (2:10 PM EST)
 (50 min)
 
@@ -4142,7 +4142,7 @@ Press Pool
 Location:
 McAllen, TX
 
-2:05 PM CST
+2:05 PM ​CST
 (3:05 PM EST)
 (5 min)
 
@@ -4163,7 +4163,7 @@ Grande
 
 Arrive Rio Grande
 
-2:35 PM CST
+2:35 PM ​CST
 (3:35 PM EST)
 (20 min)
 
@@ -4173,7 +4173,7 @@ Press Pool
 Location:
 McAllen, TX
 
-2:55 PM CST
+2:55 PM ​CST
 (3:55 PM EST)
 (5 min)
 
@@ -4192,7 +4192,7 @@ Depart Rio Grande en route McAllen International Airport
 
 Arrive McAllen International Airport
 
-3:40 PM CST
+3:40 PM ​CST
 (3 hr, 5 min)
 
 Depart McAllen, TX en route Washington, DC
@@ -4200,7 +4200,7 @@ Note:
 
 Air Force One is a C-32.
 
-7:45 PM EST
+7:45 PM ​EST
 
 Arrive Joint Base Andrews
 
@@ -4209,7 +4209,7 @@ Arrive Joint Base Andrews
 
 Depart Joint Base Andrews en route The White House
 
-8:05 PM EST
+8:05 PM ​EST
 
 Arrive The White House
 
@@ -4355,12 +4355,12 @@ Depart The White House en route Joint Base Andrews
 
 Arrive Joint Base Andrews
 
-9:20 AM EST
+9:20 AM ​EST
 (2 hr, 35 min)
 
 Depart Washington, DC en route Kenner, LA
 
-10:55 AM CST
+10:55 AM ​CST
 
 Arrive Louis Armstrong New Orleans International Airport
 
@@ -4373,7 +4373,7 @@ Depart Kenner, LA en route New Orleans, LA
 
 Arrive New Orleans Ernest N. Morial Convention Center
 
-11:30 AM CST
+11:30 AM ​CST
 (12:30 PM EST)
 (5 min)
 
@@ -4386,7 +4386,7 @@ Closed
 Location:
 New Orleans, LA
 
-11:40 AM CST
+11:40 AM ​CST
 (12:40 PM EST)
 (30 min)
 
@@ -4399,7 +4399,7 @@ Open
 Location:
 New Orleans, LA
 
-12:15 PM CST
+12:15 PM ​CST
 (1:15 PM EST)
 (5 min)
 
@@ -4421,12 +4421,12 @@ Depart New Orleans, LA en route Kenner, LA
 
 Arrive Louis Armstrong New Orleans International Airport
 
-12:55 PM CST
+12:55 PM ​CST
 (2 hr, 10 min)
 
 Depart New Orleans, LA en route Washington, DC
 
-4:05 PM EST
+4:05 PM ​EST
 
 Arrive Joint Base Andrews
 

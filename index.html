@@ -41,7 +41,8 @@
 					Time: new Date(1900, 0, 1, currentTime.getHours(), currentTime.getMinutes()),
 					Date: new Date(currentTime.getYear()+ 1900, currentTime.getMonth(), currentTime.getDate()),
 					Duration: d.duration,
-					Event: d.event
+					Event: d.event,
+					KGroup: d.kgroup
 				};
 			};
 
@@ -86,7 +87,7 @@
 						.style("left", xPosition)
 						.style("top", yPosition - 35)
 						.select("#value")
-						.text(d.Event);
+						.text(d3.timeFormat("%I:%M %p")(d.Time) + ": " + d.Event.toLowerCase());
 
 						d3.select("#tooltip").classed("hidden", false);
 					})
@@ -111,7 +112,7 @@
 					})
 				.attr("fill", function(d,i)
 					{
-						return Vis.colorScale(d.Event);
+						return Vis.colorScale(d.KGroup);
 					})
 				.attr("event", d => d.Event)
 				.attr("date", d => d.Date);
