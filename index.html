@@ -10,6 +10,12 @@
 		<header>
 			<h1>President Trump's Schedule</h1>
 		</header>
+
+		<div class="instructions">
+			<p>
+				Press on an event to highlight all events that belong to that event's group.
+			</p>
+		</div>
 		
 		<div class="visualization">
 		<div id="tooltip" class="hidden">
@@ -53,6 +59,9 @@
 					d3.max(d, x => x.Date)
 					])
 					.range([Vis.padding, Vis.height - Vis.padding]);}
+
+			
+
 			
 			Vis.midnight = new Date(1900, 0, 1, 0, 0);
 			// Vis.xScale = d3.scaleTime()
@@ -117,6 +126,27 @@
 				.attr("event", d => d.Event)
 				.attr("date", d => d.Date);
 
+				Vis.clickedRectangle = false;
+				Vis.selectedGroup = undefined;
+				Vis.rectangles
+				.on("click", function(d)
+					{
+						if (Vis.clickedRectangle == false || Vis.selectedGroup != d.KGroup){
+							Vis.rectangles
+							.attr("fill", function(i)
+								{
+									return Vis.kGroupColorScales[d.KGroup](i.Event);
+								})
+							Vis.clickedRectangle = true;
+							Vis.selectedGroup = d.KGroup;
+						} else {
+							Vis.rectangles
+							.attr("fill", x => Vis.colorScale(x.KGroup));
+							Vis.clickedRectangle = false;
+							Vis.selectedGroup = undefined;
+						}
+					})
+
 				Vis.svg.append("g")
 				.attr("transform", "translate(0,20)")
 				.call(Vis.xAxis);
@@ -161,8 +191,16 @@
 					Vis.colorScale = d3.scaleOrdinal()
 					.range(d3.schemeSet3);
 
-					Vis.makeGraphic(Vis.dataset);
 
+					Vis.numberOfKGroups = Vis.dataset.map(x => x.KGroup).reduce((x,y) => Math.max(x,y));
+					Vis.kGroupColorScales = [];
+					Vis.gray = "#D6D6D6";
+					for (i = 0; i < Vis.numberOfKGroups; i++){
+						Vis.kGroupColorScales.push(d3.scaleOrdinal().domain(Vis.dataset.filter(x => x.KGroup == i).map(x => x.Event)).range(d3.schemeSet3).unknown(Vis.gray));
+					
+					}
+
+					Vis.makeGraphic(Vis.dataset);
 				});
 		</script>
 		</div>

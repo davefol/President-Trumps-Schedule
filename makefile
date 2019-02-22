@@ -1,4 +1,4 @@
-./data/trump_schedule.json: ./venv/lib/python2.7/site-packages/sklearn ./data/trump_schedule.tsv ./scripts/convert_to_minutes.py ./scripts/tojson.py ./script/make_tfidf_groups.py
+./data/trump_schedule.json: ./venv/lib/python2.7/site-packages/sklearn ./data/trump_schedule.tsv ./scripts/convert_to_minutes.py ./scripts/tojson.py ./scripts/make_tfidf_groups.py
 	python ./scripts/tojson.py < ./data/trump_schedule.tsv | venv/bin/python ./scripts/convert_to_minutes.py | venv/bin/python ./scripts/make_tfidf_groups.py 9 > ./data/trump_schedule.json
 
 ./data/trump_schedule.tsv: ./data/trump_schedule.txt ./scripts/wrangle.awk ./scripts/wrangle2.py
