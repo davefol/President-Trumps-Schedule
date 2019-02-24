@@ -29,3 +29,6 @@
 * After converting to csv, you can select the column using $1, $2, $3, etc. 
 * asign each row to a list of lists
 * You can use END instead of a regex to specify things that occur at the end
+
+# Get top news articles for each day with publish time
+NYT article search api with news desk variable set to front page
